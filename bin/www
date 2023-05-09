@@ -27,7 +27,6 @@ app.set('port', port);
 
 // * CRIA UM SERVIDOR HTTP
 var server = http.createServer(app);
-
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 // * SETA O SERVIDOR PARA FICAR ESCUTANDO TODAS AS INTERFACES DE REDE NA PORTA ESCOLHIDA
