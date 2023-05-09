@@ -11,7 +11,7 @@ Peculiaridades do código:
 - Uma implemetacao DTO/ Business/ Service pode ser feita no futuro
 
 
-NOTAS
+##### NOTAS
 
 1 - Na pasta do projeto
 	npm init -y
@@ -23,23 +23,24 @@ NOTAS
 	npm install http express debug --save
 
 
-Usando o gerador de aplicacao do express
+##### Usando o gerador de aplicacao do express
 
 1- npm install -g express-generator
 
 Exemplo (cria uma aplicacao na Pasta NodeWebAPI):
-
+...
      express -ejs -view=ejs -css --git NodeWebAPI
      npm install
      set DEBUG=myapp:* 
      npm start
+...
 
-
-Bibliotecas
-
+##### Bibliotecas
+...
 npm install nodemon
 npm install axios
 npm install cors
 npm install body-parser
 npm install swagger-ui-express
 npm install --save-dev swagger-autogen
+...
