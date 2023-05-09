@@ -28,23 +28,21 @@ Peculiaridades do código:
 1- npm install -g express-generator
 
 Exemplo (cria uma aplicacao na Pasta NodeWebAPI):
-...
 
+```
      express -ejs -view=ejs -css --git NodeWebAPI
      npm install
      set DEBUG=myapp:* 
      npm start
-     
-...
+```
 
 ##### Bibliotecas
-...
-
+```
 npm install nodemon
 npm install axios
 npm install cors
 npm install body-parser
 npm install swagger-ui-express
 npm install --save-dev swagger-autogen
+```
 
-...
