@@ -3,7 +3,14 @@ const utils = require('../helpers/util');
 
 exports.getHome = async (req, res, next) => {
     try { // renderiza a pagina 'html' index.ejs
-        res.render('index', {title: 'Express'});
+        
+        var data = {
+            welcome: 'Olá você está na raiz desa coleção de endpoints',
+            notToDoHere: 'Não tem nada para fazer aqui'
+        };
+
+        res.json(data);
+        //res.render('index', {title: 'Express'});
 
     } catch (error) {
         console.error(utils.endpointError(error));
